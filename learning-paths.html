@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning paths</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .time-line {
+        height: 6px;
+      }
+      .progress {
+        height: 6px;
+      }
+
+      .body-learng-path {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+      }
+      .dots {
+        right: 0;
+      }
+      .card {
+        border: 2px solid #bbbdbf;
+        width: 46%;
+      }
+
+      img {
+        float: left;
+        height: 50px;
+        width: 50px;
+        padding: 20px 15px 170px;
+      }
+      #content {
+        font-weight: 800;
+        font-size: 1.2rem;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .complete {
+        display: inline-block;
+        margin: 100px 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- head============================================================================================== -->
+    <header>
+      <div class="head main-with">
+        <div class="logo">My learning</div>
+        <div class="watched">
+          <span style="font-weight: 600"
+            >87hr 36min
+            <span style="color: #b8bbbd; font-weight: normal"
+              >watched <i class="fa-solid fa-info"></i></span
+          ></span>
+          <a href="" style="color: white">View all activity</a>
+        </div>
+        <div class="bar">
+          <a class="tab" href="index.html"
+            >All courses
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab active" href="learning-paths.html"
+            >Learning paths
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Certifications
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Archived
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Learning tools
+            <div class="underline"></div
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- cards============================================================================================================ -->
+    <div class="body-learng-path main-with">
+      <div class="card card1">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <img src="./img/fpt.jpg" alt="" />
+        <p class="small-font" style="font-weight: 600; padding: 10px">
+          Learning path
+        </p>
+        <p id="content">induction Training_GAAFOFY (VI)</p>
+        <span class="small-font complete">1 of 6 items complete</span>
+
+        <div class="time-line">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <div class="card card2">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <img src="./img/fpt.jpg" alt="" />
+        <p class="small-font" style="font-weight: 600; padding: 10px">
+          Learning path
+        </p>
+        <p id="content">
+          induction Training_GAAFOFY (VI) Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Nesciunt, laboriosam!
+        </p>
+        <span class="small-font complete">1 of 6 items complete</span>
+
+        <div class="time-line">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <div class="card card3">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <img src="./img/fpt.jpg" alt="" />
+        <p class="small-font" style="font-weight: 600; padding: 10px">
+          Learning path
+        </p>
+        <p id="content">induction Training_GAAFOFY (VI)</p>
+        <span class="small-font complete">1 of 6 items complete</span>
+
+        <div class="time-line">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+:root {
+  --color-grey: #7c8185;
+}
+body {
+  margin: 0;
+}
+.main-with {
+  margin: 0 30px;
+}
+
+/* head==============================================================================================  */
+header {
+  background: #222121;
+  color: white;
+  padding: 5px 0 0px;
+}
+.logo {
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.watched {
+  margin: 15px 0;
+}
+.watched a {
+  margin-left: 10px;
+}
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-grey);
+}
+.bar {
+  display: flex;
+  gap: 20px;
+}
+.tab {
+  position: relative;
+  padding: 0 3px 12px;
+}
+.tab:hover,
+.tab.active {
+  color: white; /* Màu chữ khi tab được chọn */
+}
+.underline {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0); /* Ẩn ban đầu */
+  transition: transform 0.3s ease;
+}
+
+.tab.active .underline {
+  transform: scaleX(1); /* Hiện khi tab được chọn */
+}
+
+/* sort==================================================================================================  */
+.sort {
+  margin: 30px 30px;
+}
+.label-sort {
+  font-weight: 550;
+  margin-bottom: 7px;
+}
+.filter {
+  display: flex;
+  gap: 10px;
+}
+.find {
+  display: flex;
+}
+select {
+  border: 1.6px solid black;
+  font-weight: 580;
+  padding: 8px;
+}
+input[type="text"] {
+  padding: 10px 6px 10px 10px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 10px 13px;
+  background: #222121;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #4a4646;
+}
+.search-container {
+  box-sizing: border-box;
+  border: 1.6px solid black;
+}
+.reset {
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  color: var(--color-grey);
+}
+.reset:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* cards==================================================================================  */
+.cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 340px;
+}
+.card {
+  position: relative;
+}
+.img img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+.dots {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 40px;
+  width: 40px;
+  background: white;
+  align-content: center;
+  display: grid;
+  row-gap: 2px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-grey);
+  margin: auto;
+}
+.time-line {
+  position: relative;
+  height: 3px;
+  background: var(--color-grey);
+}
+.progress {
+  height: 3px;
+  width: 15%;
+  background: #2e40c8;
+  position: absolute;
+  top: 0px;
+}
+.small-font {
+  font-size: 0.88rem;
+  color: var(--color-grey);
+}
+.name-course {
+  font-weight: 900;
+  font-size: 20px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.teacher {
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.end-course {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.stars {
+  color: #d78d15;
+}

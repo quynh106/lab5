@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lap5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- head============================================================================================== -->
+    <header>
+      <div class="head main-with">
+        <div class="logo">My learning</div>
+        <div class="watched">
+          <span style="font-weight: 600"
+            >87hr 36min
+            <span style="color: #b8bbbd; font-weight: normal"
+              >watched <i class="fa-solid fa-info"></i></span
+          ></span>
+          <a href="" style="color: white">View all activity</a>
+        </div>
+        <div class="bar">
+          <a class="tab active" href="index.html"
+            >All courses
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href="learning-paths.html"
+            >Learning paths
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Certifications
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Archived
+            <div class="underline"></div
+          ></a>
+
+          <a class="tab" href=""
+            >Learning tools
+            <div class="underline"></div
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- sort================================================================================================== -->
+    <div class="sort">
+      <div class="label-sort small-font">
+        <label for="">Sort by</label>
+        <label for="" style="margin-left: 125px">Filter by</label>
+      </div>
+
+      <div class="filter">
+        <div class="find">
+          <select class="select" name="option">
+            <option value="">Recently Accessed</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+
+        <div class="find">
+          <select class="my-select" name="option">
+            <option value="" hidden>Categories</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="find">
+          <select class="my-select" name="option">
+            <option value="" hidden>Progress</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="find">
+          <select class="my-select" name="option">
+            <option value="" hidden>Instructor</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+
+        <button class="reset" onclick="resetSelects()">Reset</button>
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="Search my courses" name="search" />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards================================================================================== -->
+    <div class="cards main-with">
+      <div class="card card1">
+        <div class="img">
+          <img src="./img/img1.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+      <div class="card card2">
+        <div class="img">
+          <img src="./img/img2.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card3">
+        <div class="img">
+          <img src="./img/img3.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card4">
+        <div class="img">
+          <img src="./img/img4.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card5">
+        <div class="img">
+          <img src="./img/img5.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card6">
+        <div class="img">
+          <img src="./img/img6.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card7">
+        <div class="img">
+          <img src="./img/img7.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card8">
+        <div class="img">
+          <img src="./img/img8.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card9">
+        <div class="img">
+          <img src="./img/img9.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card10">
+        <div class="img">
+          <img src="./img/img10.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+
+      <div class="card card11">
+        <div class="img">
+          <img src="./img/img11.jpg" alt="" />
+          <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+
+        <p class="name-course">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+          ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Facilis, nulla.
+        </p>
+        <p class="teacher small-font">
+          Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+          adipisicing elit..
+        </p>
+        <div class="time-line"><div class="progress"></div></div>
+
+        <div class="end-course">
+          <span class="small-font">15% complete</span>
+          <div class="rating small-font">
+            <div class="stars">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            Leave a rating
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
